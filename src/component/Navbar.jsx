@@ -14,14 +14,12 @@ function Navbar() {
         closeRef.current.style.display = 'block'
         menuRef.current.style.display = 'none'
         linkRef.current.style.display = 'block'
-
     };
 
     const close = () => {
         menuRef.current.style.display = 'block'
         closeRef.current.style.display = 'none'
         linkRef.current.style.display = 'none'
-
 
     }
 
@@ -34,8 +32,8 @@ function Navbar() {
     }
     
         return (
-            <div className=' w-[100%] overflow-x-hidden flex justify-center bg-white  '>
-               <div  className="flex justify-between pl-10 pr-10 pt-3 pb-3 items-center lg:fixed w-[98%] top-4 bg-white z-[1000] rounded-full lg:shadow-xl ">
+            <div className=' w-[100%] overflow-x-hidden'>
+               <div className="flex justify-between pl-10 pr-10 pt-3 pb-3 items-center ">
                    <div> <p className="font-bold text-[20px]"><span className="text-[#0077FF] font-extrabold text-[38px]">N</span>uelVision</p></div>
                     <div>
                         <ul className="hidden lg:flex gap-10 text-[18px] font-semibold ">
@@ -58,10 +56,10 @@ function Navbar() {
                </div>
                     <div ref={linkRef} className=' hidden fixed z-50 w-screen h-screen bg-white'>
                         <ul className="flex flex-col gap-20 text-[18px] font-semibold items-center text-center">
-                            <a href="#"><li>Home</li></a>
-                            <a href="#about"><li>About Me</li></a>
-                            <a href="#project"><li>Projects</li></a>
-                            <a href="#contact"><li>Contact Me</li></a>
+                            <a onClick={close} href="#"><li>Home</li></a>
+                            <a onClick={close} href="#about"><li>About Me</li></a>
+                            <a onClick={close} href="#project"><li>Projects</li></a>
+                            <a onClick={close} href="#contact"><li>Contact Me</li></a>
                             <a href="#"><li className="bg-[#0077FF] flex justify-center items-center  text-[18px] font-semibold text-white h-[50px] w-[200px] rounded-3xl" onClick={whatsapp}>Lets Chat</li></a>
                         </ul>
                     
