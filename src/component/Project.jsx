@@ -41,13 +41,13 @@ const Project = () => {
                     loading ? <Spinner/>  
                    
                    :
-                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 items-center w-[100%] ">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 items-center  w-[100%] ">
                     
                      {data.map((items) =>(
                       
                      
                       
-                        <div className="h-fit w-fit  p-4 rounded-2xl shadow-2xl mb-10" key={items._id}  data-aos="fade-up " data-aos-duration="3000">
+                        <div className="h-fit w-fit lg:w-[330px]  p-4 rounded-2xl shadow-2xl mb-10" key={items._id}  data-aos="fade-up " data-aos-duration="3000">
                             <a href={items.siteLink}><img src={items.image} alt="" className=' w-[320px] h-[250px] rounded-2xl  duration-500 delay-75 animate-[ease-in-out] hover:w-[340px] hover:h-[260px] ' /></a>
                             <div className="flex justify-between">
                                 <a href={items.siteLink}><p className="font-bold text-[#0077FF] pt-5">{items.name}</p></a>
