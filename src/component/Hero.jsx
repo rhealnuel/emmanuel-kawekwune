@@ -13,8 +13,8 @@ const Hero = () => {
     }
     
         return (
-            <div className='w-screen overflow-x-hidden'>
-                <div className="flex flex-col-reverse lg:flex-row justify-between w-screen items-center lg:gap-6 pb-4 pl-2 pr-2  lg:pl-10 lg:pr-20 pt-10 overflow-x-hidden">
+            <div className='w-full overflow-x-hidden '>
+                <div className="flex flex-col-reverse lg:flex-row justify-between w-screen items-center lg:gap-6 pb-4 pl-2 pr-2  lg:pl-10 lg:pr-20 pt-32 overflow-x-hidden">
                     <div className='flex flex-col gap-6 w-[100%] lg:w-full items-center' data-aos="fade-right" data-aos-duration="3000">
                         <div className='lg:text-start text-center'>
                             <p className='font-semibold text-[25px]'>Welcome to my Portfolio</p>

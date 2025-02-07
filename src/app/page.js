@@ -11,7 +11,7 @@ import "@/app/globals.css"
 
 export default function Home() {
   return (
-    <div className="w-[100vw] overflow-x-hidden">
+    <div className="w-[100%] overflow-x-hidden">
      <Navbar />
       <Hero />
       <Icons />

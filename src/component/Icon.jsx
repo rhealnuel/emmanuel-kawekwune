@@ -40,7 +40,7 @@ const Icons = () =>{
 
 ]
     return(
-        <div className=' w-screen overflow-x-hidden'>
+        <div className=' w-full overflow-x-hidden'>
            <ul className="flex flex-col lg:flex-row h-full items-center lg:items-start bg-[#F8F8F8] justify-evenly pt-10 pb-10 mt-16 mb-12">
             {myIcon.map((myIcon)=>(
                 <li key={myIcon.id}> <myIcon.name size={100} className='text-[#C6C6C6]  animate-pulse hover:animate-bounce'/> </li>

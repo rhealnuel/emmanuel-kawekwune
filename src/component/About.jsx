@@ -50,8 +50,8 @@ const About = () => {
 
     
         return (
-            <div> 
-                <div className='flex flex-col w-screen lg:flex-row items-center justify-between  p-10'>
+            <div className='w-full overflow-x-hidden' id='about'> 
+                <div className='flex flex-col w-full lg:flex-row overflow-x-hidden items-center justify-between  p-10'>
                     <div className=" flex items-center justify-center">
                         <Image src={emma2} alt="" className='w-[90%] lg:w-[500px] md:w-[500px]  rounded-full' data-aos="fade-right" data-aos-duration="3000"/>
                     </div>

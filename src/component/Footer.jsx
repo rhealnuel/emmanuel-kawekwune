@@ -6,7 +6,7 @@ import {AiFillLinkedin} from 'react-icons/ai'
 const Footer = () => {
     
         return (
-            <div className='bg-[#0077ff] text-white flex flex-col lg:flex-row justify-between items-center pl-10 pr-10'>
+            <div id="contact" className='bg-[#0077ff] w-full overflow-auto text-white flex flex-col lg:flex-row justify-between items-center pl-10 pr-10'>
                 <div className='flex flex-col lg:flex-row justify-center items-center gap-4'>
                     <div> <p className="font-bold text-[20px] text-white"><span className="text-white font-extrabold text-[38px]">N</span></p></div>
                     <p> &copy; copyright {new Date().getFullYear()} All right reserved</p>
