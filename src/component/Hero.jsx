@@ -1,7 +1,7 @@
 import React from 'react';
 import emma2 from '@/images/emma2.JPG'
 import Image from 'next/image';
-// import pdf from './'
+
 
 
 const Hero = () => {
@@ -26,10 +26,10 @@ const Hero = () => {
                         <div className='flex flex-col lg:pl-12 lg:flex-row gap-6 lg:gap-24 w-screen lg:w-full items-center'>
                             <a href={`mailto:${emailAddress}`} onClick={handleClick}><button className='lg:ml-6 bg-[#0077FF] h-12 lg:w-28 w-[300px]  rounded-3xl text-[18px] font-semibold text-white'>Hire Me</button></a>
                            <a 
-                           href='#'
-                        //    href={pdf} 
-                        //    download
-                           > <button className='text-[#0077FF] h-12 lg:w-44 w-[300px] outline outline-[#0077FF] rounded-3xl text-[18px] font-semibold bg-white'>Download CV</button> </a>
+                           href="https://docs.google.com/document/d/1-vvQD1m34DGBtZJR3YSUrTgvE5Mx8-iNCSt3HX4c7kI/edit?usp=sharing"
+                           _blank="true" 
+                           download
+                           > <button  className='text-[#0077FF] h-12 lg:w-44 w-[300px] outline outline-[#0077FF] rounded-3xl text-[18px] font-semibold bg-white'>Download CV</button> </a>
                         </div>
                     </div>
                     <div className="w-[100%] flex items-center justify-center">
