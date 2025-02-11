@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Spinner from './Spinner';
 import MediaCard from './Card';
 import { Container, Box, Grid } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -11,6 +13,9 @@ const Project = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
 
+    useEffect(() => {
+      AOS.init({ duration: 3000 });
+    }, []);
 
 
     useEffect(() => {
@@ -70,9 +75,9 @@ const Project = () => {
      
                   <Container>
                   <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-                    <Grid container spacing={4} justifyContent="center">
+                    <Grid container spacing={4} justifyContent="center"  >
                       {data.map((items, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
+                        <Grid item xs={12} sm={6} md={4} key={index} data-aos="fade-up " data-aos-duration="3000">
                           <MediaCard
                             img={items.image}
                             name={items.name}
