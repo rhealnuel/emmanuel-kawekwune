@@ -15,7 +15,7 @@ export default function MediaCard({img, name, gitLink, siteLink, tools}) {
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" className='font-semibold text-[1.2rem]'>
           {name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
